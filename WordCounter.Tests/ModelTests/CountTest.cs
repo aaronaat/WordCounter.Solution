@@ -18,6 +18,15 @@ namespace WordCounter.Tests
       Assert.AreEqual(wrd, wrd2);
     }
 
+    [TestMethod]
+    public void Count_CountWordsInSentence_Count()
+    {
+      string test = "test";
+      string sentence = "this is a test sentence test";
+      RepeatCounter testSentence = new RepeatCounter(test, sentence);
+      int result = testSentence.Count();
+      Assert.AreEqual(result, 2);
+    }
   }
 
 
