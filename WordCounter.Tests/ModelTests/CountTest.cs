@@ -22,10 +22,10 @@ namespace WordCounter.Tests
     public void Count_CountWordsInSentence_Count()
     {
       string test = "test";
-      string sentence = "this is a test sentence test";
+      string sentence = "this is a test sentence";
       RepeatCounter testSentence = new RepeatCounter(test, sentence);
       int result = testSentence.Count();
-      Assert.AreEqual(result, 2);
+      Assert.AreEqual(result, 1);
     }
   }
 
