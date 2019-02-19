@@ -7,13 +7,13 @@ namespace WordCounter.Tests
   public class RepeatCounterTest
   {
     [TestMethod]
-    public void Constructor_CreateObject_Object()
+    public void Count_CountTwoWords_Count()
     {
-      string word = "word";
-      string sentence = "sentence goes here";
-      RepeatCounter testOne = new RepeatCounter(word, sentence);
-      Assert.AreEqual(testOne.GetWord(), "word");
-      Assert.AreEqual(testOne.GetSentence(), "sentence goes here");
+      string test = "test";
+      string sentence = "this is a test sentence to test";
+      RepeatCounter testSentence = new RepeatCounter(test, sentence);
+      int result = testSentence.Count();
+      Assert.AreEqual(result, 2);
     }
 
     [TestMethod]
