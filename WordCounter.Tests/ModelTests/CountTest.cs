@@ -7,6 +7,16 @@ namespace WordCounter.Tests
   public class RepeatCounterTest
   {
     [TestMethod]
+    public void Constructor_CreateObject_Object()
+    {
+      string word = "word";
+      string sentence = "sentence goes here";
+      RepeatCounter testOne = new RepeatCounter(word, sentence);
+      Assert.AreEqual(testOne.GetWord(), "word");
+      Assert.AreEqual(testOne.GetSentence(), "sentence goes here");
+    }
+
+    [TestMethod]
     public void Constructor_CreateSetWordSentence_WordSentence()
     {
       string wrd = "word";
