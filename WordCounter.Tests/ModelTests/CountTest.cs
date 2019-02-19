@@ -7,6 +7,15 @@ namespace WordCounter.Tests
   public class RepeatCounterTest
   {
     [TestMethod]
+    public void Count_CountNoMatchinWords_Count()
+    {
+      string test = "test";
+      string sentence = "this sentence is for testing";
+      RepeatCounter testSentence = new RepeatCounter(test, sentence);
+      int result = testSentence.Count();
+      Assert.AreEqual(result, 0);
+    }
+    [TestMethod]
     public void Count_CountTwoWords_Count()
     {
       string test = "test";
