@@ -19,6 +19,13 @@ user enters partial word found in sentence | word | sorry word was not found!
 ```
 git clone https://github.com/aaronaat/WordCounter.Solution.git
 ```
+* To run web app, navigate to WordCounter directory
+```
+dotnet restore
+dotnet build
+dotnet run
+```
+
 * To run test methods, navigate to WordCounter.Tests directory
 ```
 dotnet restore
