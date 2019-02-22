@@ -1,6 +1,6 @@
 using System;
 
-namespace WordCounter {
+namespace WordCounter.Models {
 
   public class RepeatCounter
   {
@@ -34,7 +34,7 @@ namespace WordCounter {
         }
       }
       return count;
-    }
+     }
 
   }
 
