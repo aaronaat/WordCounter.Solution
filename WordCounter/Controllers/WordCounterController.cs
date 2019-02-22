@@ -19,9 +19,9 @@ namespace WordCounter.Controllers
       }
 
       [HttpPost("/count")]
-      public ActionResult Create(string w, string s)
+      public ActionResult Create(string word, string sentence)
       {
-        RepeatCounter newCount = new RepeatCounter(w, s);
+        RepeatCounter newCount = new RepeatCounter(word, sentence);
         return View("Index", newCount);
       }
 
